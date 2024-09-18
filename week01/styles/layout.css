@@ -19,7 +19,7 @@ body {
 
 header {
     grid-area: header;
-    background: #333;
+    background: rgb(91, 105, 141);
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -27,7 +27,7 @@ header {
 
 nav {
     grid-area: nav;
-    background: #000000;
+    background: rgb(46, 71, 134);
     color: #fff;
     display: flex;
     justify-content: space-around;
@@ -44,8 +44,8 @@ nav a {
 nav a:hover {
 	font-weight: 700;
 	text-decoration: underline;
-    color: #085f1b;
-	text-decoration-color: rgb(28, 204, 12);
+    color: rgb(155, 168, 201);
+	text-decoration-color: rgb(14, 78, 238);;
 }
 main {
     grid-area: main;
@@ -55,13 +55,13 @@ main {
 
 aside {
     grid-area: aside;
-    background: #ddd;
+    background:  rgb(227, 234, 250);
     padding: 1rem;
 }
 
 footer {
     grid-area: footer;
-    background: #333;
+    background: rgb(91, 105, 141);
     color: #fff;
     text-align: center;
     padding: 1rem;
