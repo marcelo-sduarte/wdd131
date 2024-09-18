@@ -29,19 +29,24 @@ nav {
     grid-area: nav;
     background: #000000;
     color: #fff;
-    padding: 0.5rem;
-}
-
-nav ul {
     display: flex;
-    list-style: none;
     justify-content: space-around;
 }
 
-nav li {
-    margin: 0 1rem;
-}
+nav a {
+	display: block;
+	color: #ffffff;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
 
+}
+nav a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+    color: #085f1b;
+	text-decoration-color: rgb(28, 204, 12);
+}
 main {
     grid-area: main;
     padding: 1rem;
