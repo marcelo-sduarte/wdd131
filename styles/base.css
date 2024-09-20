@@ -116,7 +116,9 @@ aside {
 .card a {
     text-decoration: none;
 }
-
+#titleGuimaraes{
+    text-align: center;
+}
 
 img{
     border-radius: 1rem;
