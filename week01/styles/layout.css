@@ -22,7 +22,17 @@ header {
     background: rgb(91, 105, 141);
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    height: 200px;
+    display: flex; /* Torna o header um contêiner flexível */
+    flex-direction: column; /* Coloca os itens em uma coluna (de cima para baixo) */
+    justify-content: flex-end; /* Alinha o conteúdo na parte inferior */
+}
+
+header h1{
+    grid-area: header;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-bottom: 3%;
 }
 
 nav {
@@ -39,6 +49,7 @@ nav a {
 	padding: 0.75rem;
 	text-decoration: none;
 	text-align: center;
+    position: relative;
 
 }
 nav a:hover {
