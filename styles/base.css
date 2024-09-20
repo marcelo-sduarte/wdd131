@@ -101,9 +101,7 @@ aside {
 }
 .card{
     display: flex;   
-    padding: 0.5rem;
     gap: 20px;            
-    justify-items: center;
     align-items: center;
   }
 
@@ -115,9 +113,6 @@ aside {
 
 .card a {
     text-decoration: none;
-}
-#titleGuimaraes{
-    text-align: center;
 }
 
 img{
