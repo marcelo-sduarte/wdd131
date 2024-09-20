@@ -50,13 +50,13 @@ nav a {
 	text-decoration: none;
 	text-align: center;
     position: relative;
-
 }
+
 nav a:hover {
 	font-weight: 700;
 	text-decoration: underline;
     color: rgb(155, 168, 201);
-	text-decoration-color: rgb(14, 78, 238);;
+	text-decoration-color: rgb(234, 238, 14);;
 }
 main {
     grid-area: main;
@@ -68,6 +68,45 @@ aside {
     grid-area: aside;
     background:  rgb(227, 234, 250);
     padding: 1rem;
+}
+
+.webresources h2{
+    text-align: center;
+}
+
+.webresources ul li a{   
+    text-align: center;
+    align-items: center;
+    display: flex;
+	color: #777284; 
+    text-decoration: none;
+    margin-top: 10%;
+}
+
+.webresources a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+    color: rgb(11, 64, 197);
+	text-decoration-color: rgb(70, 4, 212);
+}
+.card{
+    display: flex;        /* Torna o container flexível */
+    align-items: center;  /* Alinha verticalmente ao centro (opcional) */
+    gap: 20px;            /* Espaço entre a imagem e o texto */
+  }
+
+.card img{
+    position: relative;
+    max-width: 400px;
+    height: auto;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+img{
+    border-radius: 1rem;
 }
 
 footer {
