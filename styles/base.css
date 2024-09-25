@@ -5,17 +5,8 @@
 }
 
 
-#name{
-    color: rgb(197, 249, 249);
-}
-
-.coursetxt{
-    gap: 1%;
-}
-
 /* ------------ HEADER -------------*/
 header {
-    grid-area: header;
     background: rgb(19, 34, 68);
     color: #fff;
     text-align: center;
@@ -26,15 +17,21 @@ header {
 }
 
 header h1{
-    grid-area: header;
     display: flex;
     justify-content: center; 
     margin-bottom: 3%;
 }
 
+#name{
+    color: rgb(197, 249, 249);
+}
+
+.coursetxt{
+    gap: 1%;
+}
+
 /* ------------ NAV -------------*/
 nav {
-    grid-area: nav;
     background: rgb(46, 71, 134);
     color: #fff;
     display: flex;
@@ -54,7 +51,7 @@ nav a:hover {
 	font-weight: 700;
 	text-decoration: underline;
     color: rgb(155, 168, 201);
-	text-decoration-color: rgb(234, 238, 14);;
+	text-decoration-color: rgb(234, 238, 14);
 }
 
 body {
@@ -66,7 +63,7 @@ main {
     grid-template-columns: 2fr 1fr;
     padding: 1rem;
     background: #dbe5f3; 
-    max-width: 60rem;
+    max-width: 70rem;
     margin: 0 auto;
     grid-gap: 1rem;
     
@@ -132,7 +129,7 @@ main {
     margin: 0 0 0 2rem;
 }
 
-.webresources a:hover {
+.card a:hover {
 	font-weight: 700;
 	text-decoration: underline;
     color: rgb(11, 64, 197);
@@ -148,6 +145,7 @@ main {
 .card a {
     text-decoration: none;
     color:rgb(70, 4, 212);
+    
 }
 
 figure {
@@ -162,7 +160,6 @@ figure {
 
 /* ------------ FOOTER -------------*/
 footer {
-    grid-area: footer;
     background: rgb(19, 34, 68);
     color: #fff;
     text-align: center;
