@@ -13,7 +13,7 @@
     gap: 1%;
 }
 
-
+/* ------------ HEADER -------------*/
 header {
     grid-area: header;
     background: rgb(19, 34, 68);
@@ -32,6 +32,7 @@ header h1{
     margin-bottom: 3%;
 }
 
+/* ------------ NAV -------------*/
 nav {
     grid-area: nav;
     background: rgb(46, 71, 134);
@@ -58,38 +59,47 @@ nav a:hover {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    display: grid;
-    grid-template-areas:
-        "header header header header"
-        "nav nav nav nav"
-        "main main main aside"
-        "footer footer footer footer";
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-height: 100vh;
 }
-
+/* ------------ MAIN -------------*/
 main {
-    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     padding: 1rem;
-    background: #f4f4f4;
-
+    background: #dbe5f3; 
+    max-width: 60rem;
+    margin: 0 auto;
+    grid-gap: 1rem;
     
 }
 
-aside {
-    grid-area: aside;
-    background:  rgb(227, 234, 250);
-    padding: 1rem;
+.card{
+    outline: 1px auto  rgb(95, 123, 187);
+    border-radius: 1rem;   
 }
-
-h2{
+.card h2 {
     text-align: center;
+    background-color: #b7bef5;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 0.5rem;
 }
 
+.author {
+    display: grid;
+    grid-template-columns: 1fr 1fr  auto;
+    padding: 0.5rem;    
+  }
+
+.country {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    justify-content: center;
+    justify-content: center;
+  }
 
 .author img {
     grid-column: 3/3;
+    border: 2px solid rgb(116, 116, 178);
   }
 
 .author p {
@@ -98,19 +108,8 @@ h2{
     justify-self: center;
   }
 
-.author {
-    display: grid;
-    grid-template-columns: 1fr 1fr  auto;    
-  }
-
-.country {
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    justify-content: center;
-  }
-
 .country h3 {
-    grid-column: 2/3;
+    grid-column: 3/3;
     text-align: center;
     border-bottom: 1px solid #bbb;
     margin: 0 auto;
@@ -118,18 +117,19 @@ h2{
 
 .country img {
     grid-column: 2/3;
+    margin-left: 1rem;
+    border: 2px solid rgb(116, 116, 178);
 }
 .country p {
     grid-column: 3/3;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
-.webresources { 
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-	color: #4b4a4f; 
-    text-decoration: none;
+
+.card ul {
     align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 0 0 2rem;
 }
 
 .webresources a:hover {
@@ -142,6 +142,7 @@ h2{
 .card img{
     max-width: 200px;
     height: auto;
+    border-radius: 1rem;
 }
 
 .card a {
@@ -149,10 +150,7 @@ h2{
     color:rgb(70, 4, 212);
 }
 
-img{
-    border-radius: 1rem;
-}
-
+/* ------------ FOOTER -------------*/
 footer {
     grid-area: footer;
     background: rgb(19, 34, 68);
