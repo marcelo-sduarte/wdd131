@@ -150,6 +150,16 @@ main {
     color:rgb(70, 4, 212);
 }
 
+figure {
+    margin: .5rem;
+  }
+  
+  figcaption {
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+  }
+
 /* ------------ FOOTER -------------*/
 footer {
     grid-area: footer;
