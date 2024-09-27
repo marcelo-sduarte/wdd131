@@ -1,0 +1,38 @@
+@media (min-width: 768px) { /* Mudar conforme necessário */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    header h2{
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none; /* Esconder o hamburger em desktop */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));        
+    }
+
+    .nav {
+        display: flex; 
+        background-color: transparent;
+    }
+    
+    
+    .nav ul {
+        display: flex; /* Exibir como lista horizontal */
+        padding: 0; /* Remover padding padrão */
+        list-style: none; /* Remover marcadores da lista */        
+    }
+    
+    .nav ul li {
+        margin: 0 20px; /* Margem entre os itens */
+    }
+    
+}

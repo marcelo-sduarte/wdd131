@@ -1,0 +1,158 @@
+
+
+* {
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 10px;
+    margin: 10px;
+    
+}
+/* Estilos para o X */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #b8f422;
+    position: absolute;
+    top: 1rem;
+    right: 0.1rem;
+    cursor: pointer;
+    display: none; /* Ocultar inicialmente */
+}
+
+.nav.show .close-btn {
+    display: block; /* Mostrar quando o menu estiver aberto */
+}
+
+
+/* Estilos do hamburger quando ativo */
+.hamburger.active .bar1 {
+    transform: rotate(45deg);
+    top: 10px; /* Ajusta a posição da barra 1 */
+}
+
+.hamburger.active .bar2 {
+    opacity: 0; /* Oculta a barra do meio */
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(-45deg);
+    top: 10px; /* Ajusta a posição da barra 3 */
+}
+
+.bar {
+    height: 4px;
+    width: 30%;
+    background-color: #333;
+    margin: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* ------------ HEADER -------------*/
+header {
+    color: #ffffff;
+    background-color: rgb(62, 100, 73);
+    text-align: center;
+    height: 100px;  
+}
+
+header h2{
+    margin-left: 2rem;
+    display: none;
+}
+
+.nav {
+    display: none; /* Inicialmente oculto */
+    top: 30px;
+    background-color: #739076;
+    position: absolute;
+    flex-direction: column;
+    max-width: 100;
+
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.nav ul li {
+    text-align: center;
+   
+}
+
+.nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+    color: rgb(119, 216, 153);
+	text-decoration-color: rgb(87, 229, 35);
+}
+
+.nav.show {
+    display: block; /* Mostra o menu quando ativo */
+    max-width: 200px;
+}
+
+img { 
+    max-width: 80%; 
+    height: auto; 
+    max-width: 200px;
+}
+
+.container{
+    background-color:   #e4f0f2;
+    height: auto;
+}
+figure img:hover {
+    box-shadow: 0 0 50px #333;
+    border-radius: 500% ;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0.1rem;
+}
+
+#lastModified{
+    color: #b8f422;
+}
+
+footer {
+    display: flex;
+    color: white;
+    background-color: rgb(62, 100, 73);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 14px;
+}
