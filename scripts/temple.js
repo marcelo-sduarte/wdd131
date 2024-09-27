@@ -10,3 +10,9 @@ document.getElementById('close-btn').addEventListener('click', function() {
     document.getElementById('hamburger').classList.remove('active'); // Remove a classe 'active' do hamburger
 });
 
+
+// last modified
+
+const lastModif = new Date();
+document.querySelector('#lastModified').textContent = lastModif.toLocaleString('pt-BR').replace(',', '');
+
