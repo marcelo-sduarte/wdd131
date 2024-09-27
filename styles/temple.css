@@ -62,7 +62,7 @@ body {
 .bar {
     height: 4px;
     width: 30%;
-    background-color: #333;
+    background-color:  #ffffff;;
     margin: 5px 10px;
     transition: all 0.3s ease;
 }
@@ -70,7 +70,7 @@ body {
 /* ------------ HEADER -------------*/
 header {
     color: #ffffff;
-    background-color: rgb(62, 100, 73);
+    background-color: rgb(38, 66, 47);
     text-align: center;
     height: 100px;  
 }
@@ -123,7 +123,7 @@ header h2{
 img { 
     max-width: 80%; 
     height: auto; 
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .container{
@@ -133,23 +133,24 @@ img {
 figure img:hover {
     box-shadow: 0 0 50px #333;
     border-radius: 500% ;
+    max-width: 80%;
 }
 
 figcaption {
     font-style: italic;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     margin-top: 0.1rem;
 }
 
 #lastModified{
-    color: #b8f422;
+    color: #35ff16;
 }
 
 footer {
     display: flex;
     color: white;
-    background-color: rgb(62, 100, 73);
+    background-color: rgb(38, 66, 47);
     text-align: center;
     justify-content: center;
     align-items: center;
