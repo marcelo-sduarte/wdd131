@@ -1,0 +1,45 @@
+@media (min-width: 768px) { /* Mudar conforme necessário */
+    
+    header {
+        display: flex;
+		align-items: center;
+		justify-content: space-between;
+        height: 100px;  
+    }
+    
+    h1{
+        display: flex;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+		flex-direction: row;
+        background-color: transparent;	    
+    }
+    
+    
+    .nav ul {
+        display: flex; /* Exibir como lista horizontal */
+        padding: 0; /* Remover padding padrão */
+        list-style: none; /* Remover marcadores da lista */        
+        margin-left: 15rem;
+    }
+    
+    .nav ul li {
+        margin: 0 5px; /* Margem entre os itens */
+    }
+
+    .hamburger {
+        display: none; /* Esconder o hamburger em desktop */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));        
+    }
+    
+    figure img{
+        max-width: 90%;
+    }
+}
