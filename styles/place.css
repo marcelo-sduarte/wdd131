@@ -19,7 +19,7 @@ main{
 
 .container{
     display: grid;
-    grid-template-columns: 1f; 
+    grid-template-columns: 1fr; 
     align-items: center;
     justify-content: center;
     
@@ -38,8 +38,8 @@ main{
 .weather{
     font-family: 'Open Sans', sans-serif;
     display: grid;
-    grid-template-columns: 1/1;
-    grid-template-rows: 2/1;
+    grid-template-columns: 1fr;
+    grid-row: auto;
     align-items: center;
     justify-content: center;
     text-align: center;              
