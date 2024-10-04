@@ -12,7 +12,7 @@ h2{
 
 main{
     width: 90%;
-    background-color: rgb(212, 244, 211);
+    background-color: rgb(220, 218, 183);
     margin: 0 auto;  
     font-size: 14px;
 }
@@ -32,7 +32,7 @@ main{
 .data{
     grid-column: 1/1; 
     width: 80%;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .weather{
@@ -48,7 +48,7 @@ main{
 
 /* ------------ HEADER AND FOOTER -------------*/
 footer, header {
-    background: rgb(9, 94, 9);
+    background: rgb(53, 53, 21);
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -60,7 +60,7 @@ footer span{
 }
 
 .container img:hover{
-    box-shadow: 0 0 50px #5dc409;
+    box-shadow: 0 0 50px #98a021;
     border-radius: 2% 
 }
 
@@ -68,6 +68,6 @@ footer span{
     box-shadow: 0 0 10px #333;
     border-radius: 2% ;
     padding: 0.1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 
 }
