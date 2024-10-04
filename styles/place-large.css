@@ -1,0 +1,32 @@
+@media (min-width: 1000px) {
+    main{
+        width: 80%;
+    }
+
+    h2 {
+        align-items: center;
+        justify-content: center;        
+    }
+    .container{
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 600px 1fr ;
+        grid-template-rows: auto auto;
+        gap: 3%;
+    }
+    .image{
+        grid-column: 1/2;  
+        grid-row: 1/2  
+    }
+    .data{
+        grid-column: 2/3; 
+        grid-row: 1/2 ;
+    }
+
+    .data h2 {
+        text-align: left;       
+    }
+ 
+
+   
+
+}

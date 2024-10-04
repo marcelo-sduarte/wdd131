@@ -1,0 +1,73 @@
+
+
+
+/* ------------ BODY -------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+h2{
+    text-align: center;
+}
+
+main{
+    width: 90%;
+    background-color: rgb(212, 244, 211);
+    margin: 0 auto;  
+    font-size: 14px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1f; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image{
+    grid-column: 1/1; 
+}
+
+.data{
+    grid-column: 1/1; 
+    width: 80%;
+    padding: 4rem;
+}
+
+.weather{
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1/1;
+    grid-template-rows: 2/1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;              
+}
+
+
+/* ------------ HEADER AND FOOTER -------------*/
+footer, header {
+    background: rgb(9, 94, 9);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer span{
+    font-style: italic;
+    color: yellow;
+}
+
+.container img:hover{
+    box-shadow: 0 0 50px #5dc409;
+    border-radius: 2% 
+}
+
+.container img {
+    box-shadow: 0 0 10px #333;
+    border-radius: 2% ;
+    padding: 0.1rem;
+    margin-left: 1rem;
+
+}

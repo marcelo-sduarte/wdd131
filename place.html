@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content=" this website is about Guimaraes city in the north of Portugal, have beautiul castle Guimaraes, parks and stadium and others">
+    <meta name="author" content="Marcelo Santos Duarte">
+    <title>Guimarães</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Guimarães</h1>
+        <!-- Seu cabeçalho aqui -->
+    </header>
+    <main>
+        <section class="container">
+            <div class="image">
+                <h2>Guimaraes - Portugal</h2>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/castle-300.jpg">
+                    <img src="images\castle-550.webp" alt="Castle of Guimaraes">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Site History</h2>
+                <ul>
+                    <li> Materials: Granite, Wood, Tile</li>
+                    <li> Criteria: National Monument</li>
+                    <li> Designated: 27 August 1908</li>
+                    <li><a href="https://geohack.toolforge.org/geohack.php?pagename=Castle_of_Guimar%C3%A3es&params=41_26_52.47_N_8_17_25.29_W_" target="_blank"> Cordinates: 41°26′52.47″N 8°17′25.29″W </a></li>
+                </ul>                    
+        </div>
+        </section>
+        <section class="weather">
+            <h2> Weather</h2>
+            <figure>
+                <img src="images/ico-weather.svg" alt="weather Guimaraes">
+                <span>
+                    <figcaption id="figcaption"></figcaption>
+                </span>
+             </figure>             
+            <h3> Guimarães, Portugal</h3>            
+            <p id="wind-chill">Wind Chill: Calculating...</p>
+            <p> The current temperature in Guimarães is: <span id="temperature"></span>&deg;</p>
+            
+            
+            
+        </section>
+    
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span> Marcelo Santos Duarte - Guimarães - PT</p>
+        <p> Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
