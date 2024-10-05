@@ -1,10 +1,9 @@
 
-    /* Global CSS Variables */
-    :root {
-        --weather-icon: "☀️"; /* Default icon */
-        --weather-icon-color: #f39c12; /* Default color (orange) */
-        --weather-icon-size: 2rem; /* Icon size */
-      }
+/* Global CSS Variables */
+:root {
+    --weather-icon-url: url('images/ico-weather.svg');
+    --weather-icon-size: 40px;
+}
 
 /* ------------ BODY -------------*/
 body {
@@ -56,14 +55,18 @@ main{
     font-weight: bold;
   }
 
-  .weather-heading::after {
-    content: var(--weather-icon);
-    color: var(--weather-icon-color);
-    font-size: var(--weather-icon-size);
+.weather-heading::after {
+    content: ''; 
+    display: inline-block; 
+    width: var(--weather-icon-size); 
+    height: var(--weather-icon-size); 
+    background-image: var(--weather-icon-url); 
+    background-size: var(--weather-icon-size) var(--weather-icon-size);
+    background-repeat: no-repeat; 
     margin-left: 0.5rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
+    vertical-align: middle; 
+}
+
 
 /* ------------ HEADER AND FOOTER -------------*/
 footer, header {

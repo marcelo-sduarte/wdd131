@@ -1,7 +1,6 @@
 @media (min-width: 1000px) {
     :root {
-        --weather-icon: "🌧️"; /* Change to rain icon on larger screens */
-        --weather-icon-color: #3498db;
+        --weather-icon: "⛅";
       }
     
     main{
@@ -30,6 +29,14 @@
     .data h2 {
         text-align: left;       
     }
+    .weather-heading::after {
+        content: var(--weather-icon);
+        color: var(--weather-icon-color);
+        font-size: var(--weather-icon-size);
+        margin-left: 0.5rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
  
 
    
