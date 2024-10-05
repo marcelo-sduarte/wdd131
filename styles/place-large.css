@@ -1,4 +1,9 @@
 @media (min-width: 1000px) {
+    :root {
+        --weather-icon: "🌧️"; /* Change to rain icon on larger screens */
+        --weather-icon-color: #3498db;
+      }
+    
     main{
         width: 80%;
     }

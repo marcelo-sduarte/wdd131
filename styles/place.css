@@ -1,5 +1,10 @@
 
-
+    /* Global CSS Variables */
+    :root {
+        --weather-icon: "☀️"; /* Default icon */
+        --weather-icon-color: #f39c12; /* Default color (orange) */
+        --weather-icon-size: 2rem; /* Icon size */
+      }
 
 /* ------------ BODY -------------*/
 body {
@@ -45,6 +50,20 @@ main{
     text-align: center;              
 }
 
+
+/* Heading Style with Pseudo-element */
+.weather-heading {
+    font-weight: bold;
+  }
+
+  .weather-heading::after {
+    content: var(--weather-icon);
+    color: var(--weather-icon-color);
+    font-size: var(--weather-icon-size);
+    margin-left: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
 /* ------------ HEADER AND FOOTER -------------*/
 footer, header {
