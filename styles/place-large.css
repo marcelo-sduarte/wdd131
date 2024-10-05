@@ -24,10 +24,14 @@
     .data{
         grid-column: 2/3; 
         grid-row: 1/2 ;
+        text-align: left;  
     }
 
     .data h2 {
         text-align: left;       
+    }
+    .data li {
+        margin: 0 1rem;
     }
     .weather-heading::after {
         content: var(--weather-icon);
@@ -36,8 +40,13 @@
         margin-left: 0.5rem;
         display: inline-block;
         vertical-align: middle;
-      }
- 
+    }
+
+    .weather figure {
+        display: none;
+    }
+
+
 
    
 
