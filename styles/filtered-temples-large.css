@@ -1,0 +1,56 @@
+@media (min-width: 768px) { /* Mudar conforme necessário */
+    
+/*  ------------ HEADER --------------*/
+    header {
+        display: flex;
+		align-items: center;
+		justify-content: space-between;
+        height: 100px;  
+    }
+    
+/*  ------------ BODY --------------*/
+    h1{
+        display: flex;
+    }
+
+    section{
+        box-shadow: 0 0 10px #333;
+        min-height: 500px;
+    }
+
+    
+    img { 
+    max-width: 100%; 
+    min-height: 200px;
+    max-width: 250px;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+		flex-direction: row;
+        background-color: transparent;	    
+    }
+    
+    
+    .nav ul {
+        display: flex; /* Exibir como lista horizontal */
+        padding: 0; /* Remover padding padrão */
+        list-style: none; /* Remover marcadores da lista */        
+        margin-left: 15rem;
+    }
+    
+    .nav ul li {
+        margin: 0 5px; /* Margem entre os itens */
+    }
+
+    .hamburger {
+        display: none; /* Esconder o hamburger em desktop */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));        
+    }
+
+}

@@ -1,0 +1,25 @@
+main{
+    margin:  0 auto;
+    width: 400px;
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    background: blanchedalmond;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
