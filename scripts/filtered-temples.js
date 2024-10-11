@@ -1,18 +1,17 @@
-document.getElementById('hamburger').addEventListener('click', function() {
+document.getElementById('hamburger').addEventListener('click', function () {
     const nav = document.getElementById('nav');
-    nav.classList.toggle('show'); // Alterna a classe 'show' para mostrar/ocultar o menu
-    this.classList.toggle('active'); // Alterna a classe 'active' no botão hamburger
+    nav.classList.toggle('show'); 
+    this.classList.toggle('active');
 });
 
-document.getElementById('close-btn').addEventListener('click', function() {
+document.getElementById('close-btn').addEventListener('click', function () {
     const nav = document.getElementById('nav');
-    nav.classList.remove('show'); // Remove a classe 'show' para esconder o menu
-    document.getElementById('hamburger').classList.remove('active'); // Remove a classe 'active' do hamburger
+    nav.classList.remove('show');
+    document.getElementById('hamburger').classList.remove('active'); 
 });
 
 
 // last modified
-
 const lastModif = new Date();
 document.querySelector('#lastModified').textContent = lastModif.toLocaleString('pt-BR').replace(',', '');
 
@@ -79,7 +78,7 @@ const temples = [
         location: "Lisbon City, Lisbon",
         dedicated: "2019, September, 15",
         area: 23730,
-        imageUrl:                         
+        imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lisbon-portugal/400x250/03-045a97e8471a9f581e927698521a1d184f4b3753.jpeg"
     },
     {
@@ -98,21 +97,72 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/porto-alegre-brazil/400x250/puerto-alegre-brazil-temple-lds-1027294-wallpaper.jpg"
     },
-    
-  ];
 
-createTempleCard();
+];
 
-function createTempleCard() {
-    temples.forEach ( temple => {
+// Call function for all page
+createTempleCard(temples);
+
+const templesSmall = temples.filter(temple => temple.area < 10000);
+const templesLarge = temples.filter(temple => temple.area > 90000);
+const oldTemples = temples.filter(temple => temple.dedicated .split(',')[0] < 1900);
+const newTemples = temples.filter(temple => temple.dedicated .split(',')[0] > 2000);
+
+//link to id
+const hometempleLink = document.querySelector("#home");
+const smalltempleLink = document.querySelector("#small");
+const largetempleLink = document.querySelector("#large");
+const newtempleLink = document.querySelector("#new");
+const oldtempleLink = document.querySelector("#old");
+
+document.addEventListener("click", (event) => {
+    // block pag for not reseting
+    event.preventDefault();
+    // Verify and catch event by id
+    const targetId = event.target.id
+
+    switch (targetId) {
+        case "small":
+            templeType = "Small";
+            templesToRender = templesSmall;
+            break;
+        case "home":
+            templeType = "Home";
+            templesToRender = temples;
+            break;
+        case "large":
+            templeType = "Large";
+            templesToRender = templesLarge;
+            break;
+        case "new":
+            templeType = "New";
+            templesToRender = newTemples;
+            break;
+        case "old":
+        templeType = "Old";
+        templesToRender = oldTemples;
+        break;
+        default:
+            return;
+    }
+        document.querySelector("#typeTemple").textContent = templeType;
+        createTempleCard(templesToRender);
+    });
+
+
+
+function createTempleCard(filteredTemples) {
+    // cleaning container before put more elements 
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
         /* Create html elements */
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
-        let dedication  = document.createElement("p");
+        let dedication = document.createElement("p");
         let area = document.createElement("p");
         let img = document.createElement("img");
-        
+
         // Assig string elements
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label"> Location: </span> ${temple.location}`;

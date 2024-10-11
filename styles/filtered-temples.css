@@ -114,17 +114,21 @@ body {
     text-align: center;
 }
 
+section h3 {
+    padding: 1rem;
+}
+
 section{
     min-height: 150px;
     background-color: #ccd4cd;
 }
 
-section p{
-    font-size: medium;
+section p{    
+    font-size: 12px;
 }
 
 img { 
-    box-shadow: 0 0 10px #000000;
+    border: 2px solid #ffffff;
     max-width: 100%; 
     min-height: 100px;
     max-width: 150px;
