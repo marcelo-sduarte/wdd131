@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="example forms responsive website">
+    <meta name="author" content="Marcelo Duarte">
+    <title>Product Review</title>
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/product-small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="styles/product-medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="styles/product-large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>        
+    </header>
+    <main>
+        <form method="get" action="review.html" class="formProduct" >
+            <fieldset>
+                <div>Product Name</div>
+                    <select name="productName" id="product" required>
+                    <option value="" disabled selected> Select a Product.. </option>            
+                          
+                    </select>                
+                <div>Overall Rating</div>
+                <label><input type="radio" id="rating" name="star" required>  &star;</label>
+                <label><input type="radio" id="rating" name="star" required>  &star; &star;</label>
+                <label><input type="radio" id="rating" name="star" required>  &star; &star; &star;</label>
+                <label><input type="radio" id="rating" name="star" required>  &star; &star; &star; &star;</label>
+                <label><input type="radio" id="rating" name="star" required>  &star; &star; &star; &star;&star;</label>
+                <div>Date of Installation</div>
+                <label><input type="date" id="dateInstallation" name="dateInstallation" required></label>
+                <div>Which features did you useful in the product?</div>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="use" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+                <div> Written Review (Optional)</div>
+                <label><textarea name="writtenReview" id="review"></textarea></label>
+                <div>Your Name (Optional)</div>
+                <label><input type="text" name="usersame" id="userName"></label>
+                <label><input type="submit" value="Send Your Product Review"></label>                                                                
+            </fieldset>                        
+        </form>
+    </main>
+    <footer>
+        <p> &copy;</span> Marcelo Santos Duarte - BYUI</p>
+    </footer>
+    <script src="scripts/product.js"></script>
+</body>
+</html>
