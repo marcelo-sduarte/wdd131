@@ -39,6 +39,25 @@ header {
     display: block;
 }
 
+
+.formProduct input[type="date"],
+.formProduct input[type="text"],
+.formProduct select,
+.formProduct textarea,
+.formProduct input[type="submit"]
+{
+    width: 400px;
+    max-width: 400px;
+    padding: 0.5rem;
+}
+
+.styleDisplay{
+    display:flex; 
+    align-items: center;
+    gap: 20px
+    
+}
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */
