@@ -1,0 +1,125 @@
+:root{
+    --primary-color:#636161;
+    --secundary-color:#ececec9f;
+    --color-label: #eee;
+    --color-text-primary:black;
+    --color-text-secundary:white;
+    --font-size: 0.9rem;
+    --font-primary: "Style Script", cursive;
+    --font-secundary: "Red Hat Text", sans-serif;
+}
+
+/* font google
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.red-hat-text-<uniquifier> {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+*/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0 1rem;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color:var(--primary-color);
+    color: var(--color-text-secundary);       
+}
+header h1 {text-align: center; }
+
+main{
+    margin: 2rem 1rem 2rem;
+}
+
+/* --------- TABLE ----------*/
+
+
+.grid-table{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#siteplan {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    max-width: 95%;
+    height: auto;
+  }
+  
+#siteplan td, #siteplan th {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+
+tr{
+    background-color:var(--primary-color);
+    color: var(--color-label);
+}
+#siteplan tr:nth-child(even){
+    background-color:var(--secundary-color);
+    color: black;
+}
+  
+#siteplan tr:hover {background-color:var(--primary-color);}
+
+li, tr{
+  font-size: var(--font-size);  
+}
+
+figure {
+    text-align: center; 
+    margin: 10px 0;
+}
+figcaption{
+    font-size: 9px;
+    margin-top: -1px;
+}
+
+table th {
+    min-width: 200px;
+}
+
+
+
+
+
+/* --------- FONT -------------*/
+#primary-font{
+    font-family: var(--font-primary);
+    font-size: 40px;
+}
+
+#secondary-font{
+    font-family: var(--font-secundary);
+    font-size: 16px;
+    font-weight: 450;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    background-color:var(--primary-color);
+    color: var(--color-text-secundary);
+    font-size: var(--font-size);
+    text-align: center;       
+}
