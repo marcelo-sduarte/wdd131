@@ -75,11 +75,8 @@ li {
     list-style: none;
 }
 
-figure {
-    text-align: center; 
-    margin: 10px 0;
-}
-figcaption{
+
+p{
     font-size: 9px;
     margin-top: -1px;
 }
