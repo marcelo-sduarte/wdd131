@@ -1,5 +1,5 @@
 :root{
-    --primary-color:#636161;
+    --primary-color:#444343;
     --secundary-color:#ececec9f;
     --color-label: #eee;
     --color-text-primary:black;
@@ -68,7 +68,11 @@ tr{
 #siteplan tr:hover {background-color:var(--primary-color);}
 
 li, tr{
-  font-size: 12px; 
+  font-size: 13px; 
+}
+
+li {
+    list-style: none;
 }
 
 figure {
@@ -90,10 +94,6 @@ th {
 tr {
     min-height: 100px;
 }
-
-
-
-
 
 
 /* --------- FONT -------------*/
