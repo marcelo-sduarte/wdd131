@@ -1,12 +1,13 @@
 :root{
-    --primary-color:#444343;
-    --secundary-color:#ececec9f;
-    --color-label: #eee;
+    --primary-color:#ffe1e1;
+    --secundary-color:#5d3030;
+    --color-label: #f5f4be;
     --color-text-primary:black;
     --color-text-secundary:white;
-    --font-size: 0.9rem;
+    --font-size: 1rem;
     --font-primary: "Style Script", cursive;
     --font-secundary: "Red Hat Text", sans-serif;
+    --font-color: #5d3030;
 }
 
 /* font google
@@ -29,9 +30,11 @@ header {
     background-color:var(--primary-color);
     color: var(--color-text-secundary);       
 }
-header h1 {text-align: center; }
+header {text-align: center; color: var(--font-color); }
 
-
+body{
+    font-family: var(--font-primary);
+}
 /* --------- TABLE ----------*/
 
 .grid-table{
@@ -52,23 +55,29 @@ header h1 {text-align: center; }
   }
   
 #siteplan td, #siteplan th {
-    border: 2px solid #ddd;
+    border: 2px solid var(--color-label);
     padding: 8px;
+    font-family: var(--font-secundary);
+    font-weight: 400;
   }
 
 tr{
-    background-color:var(--primary-color);
-    color: var(--color-label);
+    background-color:var(--secundary-color);
+    color: var(--color-text-secundary);
+    
 }
 #siteplan tr:nth-child(even){
-    background-color:var(--secundary-color);
-    color: black;
+    background-color:var(--color-label);
+    color: var(--color-text-primary);
+    
 }
   
 #siteplan tr:hover {background-color:var(--primary-color);}
 
 li, tr{
-  font-size: 13px; 
+  font-size: 16px; 
+  font-family: var(--font-secundary);
+  font-weight: 400;
 }
 
 li {
@@ -106,10 +115,11 @@ tr {
 }
 
 /*----------- FOOTER --------------*/
-footer {
+footer p {
     padding: .5rem 2%;
     background-color:var(--primary-color);
     color: var(--color-text-secundary);
     font-size: var(--font-size);
+    color: var(--font-color);
     text-align: center;       
 }
