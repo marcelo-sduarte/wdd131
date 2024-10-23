@@ -1,0 +1,184 @@
+:root{
+    --primary-color:#ffe1e1;
+    --secundary-color:#5d3030;
+    --color-label: #f5f4be;
+    --color-text-primary:black;
+    --color-text-secundary:white;
+    --font-size: 1rem;
+    --font-primary: "Style Script", cursive;
+    --font-secundary: "Red Hat Text", sans-serif;
+    --font-color: #5d3030;
+}
+
+/*----------- HEADER --------------*/
+header {
+    background-color:var(--primary-color);
+    color: var(--color-text-secundary);       
+}
+header {text-align: center; color: var(--font-color); }
+
+.container-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-header h1 {
+    display: none;
+} 
+
+.container-header img {
+    grid-column: 2/3;
+    height: 150px;
+} 
+
+.socialmedia a img {
+    display: none;
+    width: 40px;
+ } 
+p, nav{
+    font-family: var(--font-secundary);
+}
+/* ------ HAMBU MENU------------*/
+
+.hamburger {
+    display: block;
+    position: absolute;
+    width: 100px;
+    margin: 10px;
+}
+/* Estilos para o X */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color:var(--primary-color);
+    position: absolute;
+    margin: 0.2rem 11rem  auto;
+    display: none; 
+}
+
+nav.show .close-btn {
+    display: block; 
+}
+
+.hamburger.active .bar1 {
+    transform: rotate(45deg);
+    top: 10px; 
+}
+
+.hamburger.active .bar2 {
+    opacity: 0; 
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(-45deg);
+    top: 10px; 
+}
+
+.bar {
+    height: 4px;
+    width: 30%;
+    background-color:  #6f1616;;
+    margin: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+/* ------- NAV  ---------*/
+
+.nav {
+    display: none; 
+    background-color: var(--secundary-color);
+    height: 200px;
+    padding: 1rem;
+    margin-left: 2rem;
+    width: 100%; 
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    text-align: center;
+ 
+}
+
+.nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.nav a:hover {
+	font-weight: 700;
+    color:var(--secundary-color);
+    background-color:var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+.nav.show {
+    display: block; 
+    max-width: 200px;
+    
+}
+
+/* --------- MAIN ----------*/
+
+h1, h2, a {
+    font-family: var(--font-primary);
+}
+
+.gallery{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    gap: 0.5rem;  
+}
+
+.gallery img{
+    border: 2px solid var(--secundary-color); 
+    margin: 0.5rem;
+
+}
+
+.gallerycakes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*----------- FOOTER --------------*/
+footer a {
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+    color:var(--secundary-color);
+    font-weight: 400;
+
+}
+
+footer a:hover {
+	font-weight: 700;
+    color:var(--secundary-color);
+}
+
+footer{
+    padding: .5rem;
+    background-color:var(--primary-color);
+    color: var(--color-text-secundary);
+    font-size: var(--font-size);
+    text-align: center;       
+}

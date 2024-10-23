@@ -1,0 +1,124 @@
+@media (min-width: 768px) { /* Mudar conforme necessário */
+    /*----------- NAV  --------------*/
+    :root{
+        --primary-color:#ffe1e1;
+        --secundary-color:#5d3030;
+        --color-label: #f5f4be;
+        --color-text-primary:black;
+        --color-text-secundary:white;
+        --font-size: 1rem;
+        --font-primary: "Style Script", cursive;
+        --font-secundary: "Red Hat Text", sans-serif;
+        --font-color: #5d3030;
+    }
+    .nav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: 98.4%;	  
+        height: 40px;
+        padding: 1rem;
+        margin-left: 0;
+        border-top: 1px solid var(--font-color);
+        border-image: linear-gradient(to right,var(--font-color),var(--color-label),var(--font-color),var(--color-label),var(--font-color)) 1 0 0 0;   
+        border-image-slice: 1;         
+        border-bottom: 3px solid var(--font-color);
+        background-color:var(--color-text-secundary);
+        
+    }
+    
+    .nav ul {
+        display: flex; 
+        padding: 0; 
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        list-style: none;
+    }
+    
+    .nav ul li {
+        margin: 0 40px;         
+    }
+
+    .nav ul li a {
+        color:var(--font-color);
+    }
+
+    .hamburger {
+        display: none; 
+    }
+
+    
+
+    /*----------- HEADER --------------*/
+    .container-header {
+        grid-template-columns: repeat(100px, 1fr);
+        display: flex;
+        max-height: 200px;
+    }
+
+    .container-header img {
+        grid-column: 2/3;
+        height: 300px;
+        margin-top: 1-px;
+        } 
+
+
+    /*----------- MAIN --------------*/
+
+    .gallery img {
+ 
+        margin-left: 20rem;
+    }
+
+    #bannersmall {
+        display: none;
+    }
+
+    .gallerycakes img {
+        max-width: 100%; 
+        min-height: 200px;
+        max-width: 300px;
+        margin: 1.5rcap;
+        width: 90%;
+   
+    }
+
+    .gallerycakes img:hover {
+        box-shadow: 0 0 50px var(--secundary-color);
+        
+    }
+
+    /* ------ BODY ---------*/
+
+    h1{
+        display: flex;
+    }
+
+    section{
+        border: 1px solid var(--secundary-color); 
+        min-height: 300px;
+        margin: 1rem;
+        box-shadow: 0 0 10px #333;
+    }
+
+    section p{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /*----------- FOOTER --------------*/
+    footer p {
+        padding: .5rem 2%;
+        background-color:var(--primary-color);
+        color: var(--color-text-secundary);
+        font-size: var(--font-size);
+        color: var(--font-color);
+        text-align: center;       
+    }
+}
+
+
