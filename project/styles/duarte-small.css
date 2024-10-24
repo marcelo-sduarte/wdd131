@@ -4,7 +4,7 @@
     --color-label: #f5f4be;
     --color-text-primary:black;
     --color-text-secundary:white;
-    --font-size: 1rem;
+    --font-size: 14px;
     --font-primary: "Style Script", cursive;
     --font-secundary: "Red Hat Text", sans-serif;
     --font-color: #5d3030;
@@ -12,6 +12,7 @@
 
 /*----------- HEADER --------------*/
 header {
+
     background-color:var(--primary-color);
     color: var(--color-text-secundary);       
 }
@@ -39,9 +40,7 @@ header {text-align: center; color: var(--font-color); }
     display: none;
     width: 40px;
  } 
-p, nav{
-    font-family: var(--font-secundary);
-}
+
 /* ------ HAMBU MENU------------*/
 
 .hamburger {
@@ -92,9 +91,8 @@ nav.show .close-btn {
 .nav {
     display: none; 
     background-color: var(--secundary-color);
-    height: 200px;
+    height: 250px;
     padding: 1rem;
-    margin-left: 2rem;
     width: 100%; 
 }
 
@@ -109,7 +107,10 @@ nav.show .close-btn {
 }
 
 .nav ul li a {
-    display: block;
+    font-family: var(--font-primary);
+    display: flex;
+    text-align: center;
+    align-items: center;
     padding: 5px;
     text-decoration: none;
     color:var(--primary-color);
@@ -133,9 +134,10 @@ nav.show .close-btn {
 
 /* --------- MAIN ----------*/
 
-h1, h2, a {
-    font-family: var(--font-primary);
-}
+h1, h2, a {font-family: var(--font-primary); color: var(--font-color); text-align: center; font-weight: 500;}
+
+p{ font-family: var(--font-secundary); }
+
 
 .gallery{
     display: grid;
@@ -152,12 +154,103 @@ h1, h2, a {
 
 }
 
-.gallerycakes {
+.gallerycakes , .galleryevents {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
     
+}
+
+.gallerycakes img:hover {
+    box-shadow: 0 0 50px var(--secundary-color);
+}
+
+.gallerycakes img {
+    max-width: 100%; 
+    height: auto;
+    width: 90%;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+section{
+    border: 1px solid var(--secundary-color);
+    min-width: 250px;
+    max-width: 500px;
+    height: auto;
+    margin: 0.5rem;
+    box-shadow: 0 0 10px #333;
+}
+
+section p{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0;
+}
+/*----------- FORM --------------*/
+
+.formcontact{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.formcontact fieldset {
+    border: 2px solid var(--font-color);
+    color:var(--font-color);
+    border-radius: 6px;
+    max-width: 400px;
+    background-color: var(--color-label);
+}
+
+.formcontact label {
+    display: block;
+    padding-top: 1rcap;
+    font-size: var(--font-size);
+}
+
+.formcontact input:required , .formcontact select:required  {
+    border-left: solid 8px red;
+}
+
+.formcontact input:required:valid{
+    border-left: solid 8px green;
+}
+
+.formcontact input[type="submit"]{
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(#9c2c13,#6f200e);
+    color: white;
+    padding: .8rem;
+    width:430px;
+    max-width: 600px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: var(--font-size);
+    margin: 1rem 0 1rem 0;
+}
+
+.formcontact input[type="date"],
+.formcontact input[type="text"],
+.formcontact input[type="tel"],
+.formcontact input[type="email"],
+.formcontact textarea,
+.formcontact input[type="submit"]
+{
+    display: grid;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    max-width: 300px;
+    padding: 0.5rem;
+}
+
+.formcontact textarea{
+    height: 100px;
 }
 
 /*----------- FOOTER --------------*/
@@ -167,7 +260,6 @@ footer a {
     text-decoration: none;
     color:var(--secundary-color);
     font-weight: 400;
-
 }
 
 footer a:hover {
@@ -175,10 +267,13 @@ footer a:hover {
     color:var(--secundary-color);
 }
 
-footer{
+
+footer {
     padding: .5rem;
     background-color:var(--primary-color);
-    color: var(--color-text-secundary);
+    color:var(--secundary-color);
     font-size: var(--font-size);
     text-align: center;       
 }
+
+

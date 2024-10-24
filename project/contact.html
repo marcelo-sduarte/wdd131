@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Faustina:wght@300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Style+Script&display=swap"
         rel="stylesheet">
-    <script src="scripts/duarte.js" defer></script>
+
 </head>
 
 <body>
@@ -48,16 +48,31 @@
             <a href="http://"><img src="img/LogoSemFundo300.webp" alt="instagram"></a>
         </div>
     </header>
-    <main>
-        
-        <h2>Contact</h2>    
+    <main class="formcontact">        
+        <h2> We are excited to be here!</h2>  
+        <form  method="get" action="thanks.html" >
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Name*<input type="text" name="fname" required></label>
+                <label>Contact Number<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label>Email (opcional)<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label>Describe your request<textarea name="request" id="request" required></textarea></label>
+                
+            </fieldset>
+           
+            <fieldset>
+                <legend>Feedback</legend>
+                <label> Better day to contact Date <input type="date" name="completedDate"></label>                
+            </fieldset>
+            <input type="submit" value="Send my request">
+        </form>   
 
     </main>
     <footer>
         <p> &copy;</span>Duarte Doceria | <a href="cake-store.html">Cakes</a> | <a href="parties-events.html">Parties and Events</a> | <a href="desserts.html">Desserts</a> | <a href="contact.html">Contact </a></p>
         <p> Development by: Marcelo Duarte </p>
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/duarte.js" defer></script>
 </body>
 
 </html>
