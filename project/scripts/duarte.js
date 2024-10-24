@@ -148,11 +148,16 @@ function createEventPhotos(photos) {
 if (window.location.pathname === '/project/duartedoceria.html') {
    let visitCount = localStorage.getItem('numVisits-ls');
    if (!visitCount) {
-       visitCount = 0;
-   }
-   visitCount++;
-   localStorage.setItem('numVisits-ls', visitCount);
-   document.getElementById('visit').innerText = `Welcome! The number of accesses to the site was: ${visitCount}!`;
+        visitCount = 0;
+        stringVisit = `This is your first visit. 🥳 Welcome!`;
+    
+    } else {
+        visitCount ++;
+        stringVisit = `Welcome! The number of accesses to the site was: ${visitCount}`;
+    }
+
+    localStorage.setItem('numVisits-ls', visitCount);
+   document.getElementById('visit').innerText = `${stringVisit}`;
 }
 
 
@@ -164,3 +169,5 @@ if (window.location.pathname === '/project/parties-events.html') {
     createEventPhotos(photos);;
         
 }
+
+

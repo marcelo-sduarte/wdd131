@@ -1,7 +1,7 @@
 :root{
     --primary-color:#ffe1e1;
     --secundary-color:#5d3030;
-    --color-label: #f5f4be;
+    --color-label: #fcfbc2;
     --color-text-primary:black;
     --color-text-secundary:white;
     --font-size: 14px;
@@ -196,6 +196,7 @@ section p{
     display: grid;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-secundary);
 }
 
 .formcontact fieldset {
