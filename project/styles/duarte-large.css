@@ -1,4 +1,4 @@
-@media (min-width: 768px) { /* Mudar conforme necessário */
+@media (min-width: 1200px) {
     /*----------- NAV  --------------*/
     :root{
         --primary-color:#ffe1e1;
@@ -11,119 +11,26 @@
         --font-secundary: "Red Hat Text", sans-serif;
         --font-color: #5d3030;
     }
-
-
-    .nav {
-        display: block;                     
-        background-color: transparent;
-        max-width: 98%;	  
-        height: 40px;
-        border-top: 1px solid var(--font-color);
-        border-image: linear-gradient(to right,var(--font-color),var(--color-label),var(--font-color),var(--color-label),var(--font-color)) 1 0 0 0;   
-        border-image-slice: 1;         
-        border-bottom: 3px solid var(--font-color);
-        background-color:var(--color-text-secundary);
-        
-    }
-    
-    .nav ul {
-        display: flex; 
-        padding: 0; 
-        margin-top: -1rem;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-        height: 70px;
-    }
-    
-    .nav ul li {
-        margin: 0 10px 40px;         
-    }
-
-    .nav ul li a {
-        color:var(--font-color);
-        margin-top: 3rem;
-    }
-
-    .hamburger {
-        display: none; 
-    }
-
     
 
     /*----------- HEADER --------------*/
-    .container-header {
-        grid-template-columns: repeat(100px, 1fr);
-        display: flex;
-        max-height: 200px;
+    .nav{
+        max-width: 98.3%;	
     }
+    /*----------- MAIN ---------------*/
+    
 
-    .container-header img {
-        grid-column: 2/3;
-        height: 300px;
-        margin-top: 1-px;
-        } 
+    /* ---------- BODY --------------*/
 
 
-    /*----------- MAIN --------------*/
-    .gallerycakes , .galleryevents {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        align-items: center;
-        justify-content: center;
-        
+    /* -----------FORM --------------*/
+
+    .formcontact{
+        width: 70%;
+        margin: 1rem 0 1rem 18rem;
     }
-    .gallery img {
-        margin-left: 10rem;
-    }
-
-    #bannersmall {
-        display: none;
-    }
-
-    .gallerycakes img {
-        max-width: 400px; 
-        max-height: 200px;
-        margin: 1.5rcap;
-    }
-
- 
-
-    /* ------ BODY ---------*/
-
-    h1{
-        display: flex;
-    }
-
-    /* ---------FORM ---------*/
-    .formcontact fieldset {
-        max-width: 500px;
-    }
-
-    .formcontact input[type="submit"]{
-        width:530px;
-    }
-
-    .formcontact input[type="date"],
-    .formcontact input[type="text"],
-    .formcontact input[type="tel"],
-    .formcontact input[type="email"],
-    .formcontact textarea,
-    .formcontact input[type="submit"]
-    {
-        min-width: 400px;
-        max-width: 600px;
-        padding: 1rem;
-    }
+   
 
     /*----------- FOOTER --------------*/
-    footer p {
-        padding: .5rem 2%;
-        background-color:var(--primary-color);
-        color: var(--color-text-secundary);
-        font-size: var(--font-size);
-        color: var(--font-color);
-        text-align: center;       
-    }
+   
 }
-
-
