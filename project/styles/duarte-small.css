@@ -152,7 +152,10 @@ p{ font-family: var(--font-secundary); font-size: var(--font-size);}
     border: 2px solid var(--secundary-color); 
     align-items: center;
     justify-content: center;
-    max-width: 250px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
 
 }
 
@@ -168,11 +171,14 @@ p{ font-family: var(--font-secundary); font-size: var(--font-size);}
     box-shadow: 0 0 50px var(--secundary-color);
 }
 
-.gallerycakes img {
-    max-width: 100%; 
-    height: auto;
-    width: 90%;
-    margin: 1rem 1rem 1rem 1rem;
+.gallerycakes img , .galleryevents img , .gallerydesserts img{
+    max-width: 430px;
+    min-width: 130px;
+    width: 94%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+
 }
 
 
@@ -183,6 +189,7 @@ section{
     height: auto;
     box-shadow: 0 0 10px #333;
     margin-bottom: 1rem;
+
 }
 
 section p{
@@ -192,6 +199,13 @@ section p{
     font-size: 14px;
     margin: 0;
 }
+
+.about-us{
+    padding: 1rem;
+    align-items:center;
+    justify-content: center;
+}
+
 /*----------- FORM --------------*/
 
 .formcontact{

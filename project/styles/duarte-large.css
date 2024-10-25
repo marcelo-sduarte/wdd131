@@ -18,7 +18,25 @@
         max-width: 98.3%;	
     }
     /*----------- MAIN ---------------*/
+    .bannerhome img{
+        max-width: 1200px;
+        height: auto;
     
+    }
+
+    .gallerycakes , .galleryevents {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        
+    }
+    .gallerycakes img , .galleryevents img , .gallerydesserts img  {
+        max-width: 500px;
+        height: 350px;
+    }
+
+    section{
+        max-width: 400px;
+       
+    }
 
     /* ---------- BODY --------------*/
 

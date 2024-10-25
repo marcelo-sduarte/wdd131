@@ -14,137 +14,124 @@ document.getElementById('close-btn').addEventListener('click', function () {
 const cakes = [
     {
         name: "Chocolate",
-        filling: "",
+        filling: "Chocolate",
         frosting:"Belgian Chocolate",
-        category:"Chocolate",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
             "img/cake-home.jpg"
     },
     {
-        name: "Chocolate Belga",
+        name: "White Chocolate Belga",
         filling: "",
-        frosting:"",
-        category:"",
+        frosting:"Chocolate White Cream",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakewhitechoco.jpg"
     },
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
-        category:"",
+        name: "Banana Cake",
+        filling: "Banana ",
+        frosting:"Banana Caramel",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakebanana.jpg"
     },
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
-        category:"",
+        name: "Coconut Cake",
+        filling: "Coconut",
+        frosting:"Coconut Caramel",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakecoconut.jpg"
     },
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
-        category:"",
+        name: "Orange Cake",
+        filling: "Orange",
+        frosting:"ice suggar or ganache",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakeorange.jpg"
     },
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
-        category:"",
+        name: "Lemon Cake",
+        filling: "Lemon",
+        frosting:"Lemon Cream",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakelemon.jpg"
     },
+  
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
-        category:"",
+        name: "Peanut Cake",
+        filling: "Peanut",
+        frosting:"Milk Suggar Cream with Peanut",
+        category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cakepeanut.jpg"
     },
     {
-        name: "Chocolate Belga",
-        filling: "",
-        frosting:"",
+        name: "Brazilian Brigadeiro Cake",
+        filling: "Brazilian Brigadeiro",
+        frosting:"Brazilian Brigadeiro",
         category:"event",
         weight:"1.98 lbs",
         imageUrl:
-            "img/IMG_20240803_104324-EFFECTS.jpg"
+            "img/event1.jpg"
     },
+    {
+        name: "Brazilian Brigadeiro Cake",
+        filling: "Brazilian Brigadeiro",
+        frosting:"Brazilian Brigadeiro",
+        category:"dessert",
+        weight:"1.98 lbs",
+        imageUrl:
+            "img/desserts.jpg"
+    },
+
 ]
 
 
-const photos = [
-    {
-        name: "Chocolate Belga",
-        imageUrl:"img/IMG_20240803_104324-EFFECTS.jpg"
-    },
-    {
-        name: "Chocolate Belga",
-        imageUrl:"img/IMG_20240803_104324-EFFECTS.jpg"
-    }
-]
-
-function createCakeCard(cakes) {
+function createCakeCard(cakes, nameclass, name_category) {
     // cleaning container before put more elements 
-    document.querySelector(".gallerycakes").innerHTML = "";
+    document.querySelector(nameclass).innerHTML = "";
     cakes.forEach(cake => {
-        /* Create html elements */
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let frosting = document.createElement("p");
-        let filling = document.createElement("p");
-        let weight = document.createElement("p");
-        let img = document.createElement("img");
+        if (cake.category.includes(name_category)){
+            /* Create html elements */
+            let card = document.createElement("section");
+            let name = document.createElement("h3");
+            let frosting = document.createElement("p");
+            let filling = document.createElement("p");
+            let weight = document.createElement("p");
+            let img = document.createElement("img");
+            
+            // Assig string elements
+            name.textContent = cakes.name;
+            frosting.innerHTML = `<span class="label"> Frosting: </span> ${cake.frosting}`;
+            filling.innerHTML = `<span class="label"> Filling: </span> ${cake.filling}`;
+            weight.innerHTML = `<span class="label"> Weight: </span> ${cake.weight}`;
+            img.setAttribute("src", cake.imageUrl);
+            img.setAttribute("alt", `${cake.name} Cake`);
+            img.setAttribute("loading", "lazy");
+            
+            card.appendChild(name);
+            card.appendChild(frosting);
+            card.appendChild(filling);
+            card.appendChild(weight);
+            card.appendChild(img);
 
-        // Assig string elements
-        name.textContent = cakes.name;
-        frosting.innerHTML = `<span class="label"> Frosting: </span> ${cake.frosting}`;
-        filling.innerHTML = `<span class="label"> Filling: </span> ${cake.filling}`;
-        weight.innerHTML = `<span class="label"> Weight: </span> ${cake.weight}`;
-        img.setAttribute("src", cake.imageUrl);
-        img.setAttribute("alt", `${cake.name} Cake`);
-        img.setAttribute("loading", "lazy");
-        
-        card.appendChild(name);
-        card.appendChild(frosting);
-        card.appendChild(filling);
-        card.appendChild(weight);
-        card.appendChild(img);
-       
-
-        document.querySelector(".gallerycakes").appendChild(card)
+            document.querySelector(nameclass).appendChild(card)
+        }
     })
 }
 
-function createEventPhotos(photos) {
-    // cleaning container before put more elements 
-    document.querySelector(".galleryevents").innerHTML = "";
-    photos.forEach(photo => {
-        /* Create html elements */
-        let image = document.createElement("img");
 
-        // Assig string elements
-        image.setAttribute("src", photo.imageUrl);
-        image.setAttribute("alt", `${photo.name} Cake`);
-        image.setAttribute("loading", "lazy");
-
-        document.querySelector(".galleryevents").appendChild(image)
-    })
-}
 if (window.location.pathname === '/project/duartedoceria.html') {
    let visitCount = localStorage.getItem('numVisits-ls');
    if (!visitCount) {
@@ -162,12 +149,18 @@ if (window.location.pathname === '/project/duartedoceria.html') {
 
 
 if (window.location.pathname === '/project/cake-store.html') {
-    createCakeCard(cakes);
+     class_name = ".gallerycakes"
+     category_name = "simple"
     }
 
 if (window.location.pathname === '/project/parties-events.html') {
-    createEventPhotos(photos);;
-        
-}
+    class_name = ".galleryevents"
+    category_name = "event"       
+    }
 
+if (window.location.pathname === '/project/desserts.html') {
+    class_name = ".gallerydesserts"
+    category_name = "dessert"       
+    }
 
+createCakeCard(cakes, class_name, category_name);

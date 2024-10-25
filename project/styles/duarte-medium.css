@@ -67,12 +67,6 @@
 
 
     /*----------- MAIN --------------*/
-    .gallerycakes , .galleryevents {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        align-items: center;
-        justify-content: center;
-        
-    }
     .bannerhome img {
         max-width: 500px;
 
@@ -82,14 +76,19 @@
         display: none;
     }
 
-    .gallerycakes img {
-        max-width: 400px; 
-        max-height: 200px;
-        margin: 1.5rcap;
+    .gallerycakes , .galleryevents {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+     
     }
+    
+    .gallerycakes img ,.galleryevents img , .gallerydesserts img {     
+        max-width: 450px;
+    }
+
 
     section {
         margin-left: 1rem;
+        
 
     }
 
