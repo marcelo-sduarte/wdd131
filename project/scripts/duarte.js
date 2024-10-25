@@ -132,7 +132,7 @@ function createCakeCard(cakes, nameclass, name_category) {
 }
 
 
-if (window.location.pathname === '/project/duartedoceria.html') {
+if (window.location.pathname.includes ("/project/duartedoceria.html")) {
    let visitCount = localStorage.getItem('numVisits-ls');
    if (!visitCount) {
         visitCount = 0;
@@ -148,17 +148,17 @@ if (window.location.pathname === '/project/duartedoceria.html') {
 }
 
 
-if (window.location.pathname === '/project/cake-store.html') {
+if (window.location.pathname.includes('/project/cake-store.html')) {
      class_name = ".gallerycakes"
      category_name = "simple"
     }
 
-if (window.location.pathname === '/project/parties-events.html') {
+if (window.location.pathname.includes('/project/parties-events.html')) {
     class_name = ".galleryevents"
     category_name = "event"       
     }
 
-if (window.location.pathname === '/project/desserts.html') {
+if (window.location.pathname.includes('/project/desserts.html')) {
     class_name = ".gallerydesserts"
     category_name = "dessert"       
     }
