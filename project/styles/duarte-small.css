@@ -213,6 +213,7 @@ section p{
     align-items: center;
     justify-content: center;
     font-family: var(--font-secundary);
+    font-weight: 500;
     border: 1px solid var(--font-color);
     width: 98%;
     margin: 1rem 0 1rem 0;
