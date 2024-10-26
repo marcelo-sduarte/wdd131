@@ -134,7 +134,7 @@ nav.show .close-btn {
 
 /* --------- MAIN ----------*/
 
-h1, h2, a {font-family: var(--font-primary); color: var(--font-color); text-align: center; font-weight: 500;}
+h1, h2, h3, a {font-family: var(--font-primary); color: var(--font-color); text-align: center; font-weight: 500;}
 
 p{ font-family: var(--font-secundary); font-size: var(--font-size);}
 
@@ -159,7 +159,7 @@ p{ font-family: var(--font-secundary); font-size: var(--font-size);}
 
 }
 
-.gallerycakes , .galleryevents {
+.gallerycakes , .galleryevents , .gallerydesserts{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;

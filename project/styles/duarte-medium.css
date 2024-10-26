@@ -76,7 +76,7 @@
         display: none;
     }
 
-    .gallerycakes , .galleryevents {
+    .gallerycakes , .galleryevents , .gallerydesserts {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
      
     }

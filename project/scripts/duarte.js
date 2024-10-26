@@ -13,86 +13,113 @@ document.getElementById('close-btn').addEventListener('click', function () {
 
 const cakes = [
     {
-        name: "Chocolate",
-        filling: "Chocolate",
-        frosting:"Belgian Chocolate",
+        name: "Carrot Cake",
+        filling: "Chocolate Cake",
+        frosting:"Brazilian Chocolate Brigadeiro",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cake-home.jpg"
+            "img/cake-home.webp"
     },
     {
-        name: "White Chocolate Belga",
-        filling: "",
-        frosting:"Chocolate White Cream",
+        name: "White Chocolate Belga Cake",
+        filling: "White Cake",
+        frosting:"Brazilian White Brigadeiro",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakewhitechoco.jpg"
+            "img/cakewhitechoco.webp"
     },
     {
         name: "Banana Cake",
-        filling: "Banana ",
+        filling: "Banana Cake ",
         frosting:"Banana Caramel",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakebanana.jpg"
+            "img/cakebanana.webp"
     },
     {
         name: "Coconut Cake",
-        filling: "Coconut",
+        filling: "Coconut Cake",
         frosting:"Coconut Caramel",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakecoconut.jpg"
+            "img/cakecoconut.webp"
     },
     {
         name: "Orange Cake",
-        filling: "Orange",
+        filling: "Orange Cake",
         frosting:"ice suggar or ganache",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakeorange.jpg"
+            "img/cakeorange.webp"
     },
     {
         name: "Lemon Cake",
-        filling: "Lemon",
+        filling: "Lemon Cake",
         frosting:"Lemon Cream",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakelemon.jpg"
+            "img/cakelemon.webp"
     },
   
     {
         name: "Peanut Cake",
-        filling: "Peanut",
-        frosting:"Milk Suggar Cream with Peanut",
+        filling: "Peanut Cake",
+        frosting:"Brazilian Brigadeiro with Peanut",
         category:"simple",
         weight:"1.98 lbs",
         imageUrl:
-            "img/cakepeanut.jpg"
+            "img/cakepeanut.webp"
     },
     {
         name: "Brazilian Brigadeiro Cake",
-        filling: "Brazilian Brigadeiro",
-        frosting:"Brazilian Brigadeiro",
+        filling: "White Cake",
+        frosting:"Brazilian Brigadeiro with personalized Topper",
         category:"event",
         weight:"1.98 lbs",
         imageUrl:
-            "img/event1.jpg"
+            "img/event1.webp"
     },
     {
-        name: "Brazilian Brigadeiro Cake",
-        filling: "Brazilian Brigadeiro",
-        frosting:"Brazilian Brigadeiro",
-        category:"dessert",
+        name: "Red Velvet Strawberry Cake",
+        filling: "Red Velvet Cake",
+        frosting:"Brazilian White Brigadeiro",
+        category:"event",
         weight:"1.98 lbs",
         imageUrl:
-            "img/desserts.jpg"
+            "img/event3.webp"
+    },
+    {
+        name: "Carrot Cake in a Jar",
+        filling: "Carrot Cake",
+        frosting:"Brazilian Black Brigadeiro",
+        category:"dessert",
+        weight: "4 Oz",
+        imageUrl:
+            "img/desserts1.webp"
+    },
+    {
+        name: "White Cake in a Jar",
+        filling: "White Cake",
+        frosting:"Brazilian White Brigadeiro",
+        category:"dessert",
+        weight:"4 Oz",
+        imageUrl:
+            "img/desserts2.webp"
+    },
+    {
+        name: "Brazilian Brigadeiros",
+        filling: "Black Chocolate, Peanut, Strawberry and others",
+        frosting:"Brazilian White Brigadeiro",
+        category:"dessert",
+        weight:"0.85 Oz",
+        imageUrl:
+            "img/dessert3.webp"
     },
 
 ]
@@ -112,12 +139,12 @@ function createCakeCard(cakes, nameclass, name_category) {
             let img = document.createElement("img");
             
             // Assig string elements
-            name.textContent = cakes.name;
+            name.innerHTML = `<span class="label"> </span> ${cake.name}`;
             frosting.innerHTML = `<span class="label"> Frosting: </span> ${cake.frosting}`;
             filling.innerHTML = `<span class="label"> Filling: </span> ${cake.filling}`;
             weight.innerHTML = `<span class="label"> Weight: </span> ${cake.weight}`;
             img.setAttribute("src", cake.imageUrl);
-            img.setAttribute("alt", `${cake.name} Cake`);
+            img.setAttribute("alt", `${cake.name} Cake` );
             img.setAttribute("loading", "lazy");
             
             card.appendChild(name);
