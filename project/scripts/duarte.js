@@ -77,6 +77,15 @@ const cakes = [
             "img/cakepeanut.webp"
     },
     {
+        name: "Extreme Chocolate Brigadeiro Cake",
+        filling: "Chocolate Cake",
+        frosting:"Generous Brazilian Brigadeiro",
+        category:"event",
+        weight:"1.98 lbs",
+        imageUrl:
+            "img/event.webp"
+    },
+    {
         name: "Brazilian Brigadeiro Cake",
         filling: "White Cake",
         frosting:"Brazilian Brigadeiro with personalized Topper",
@@ -86,6 +95,15 @@ const cakes = [
             "img/event1.webp"
     },
     {
+        name: "Personalized Cake Decoration",
+        filling: "Chocolate Cake",
+        frosting:"Tooper Personalized",
+        category:"event",
+        weight:"1.98 lbs",
+        imageUrl:
+            "img/event2.webp"
+    },
+    {
         name: "Red Velvet Strawberry Cake",
         filling: "Red Velvet Cake",
         frosting:"Brazilian White Brigadeiro",
@@ -93,6 +111,15 @@ const cakes = [
         weight:"1.98 lbs",
         imageUrl:
             "img/event3.webp"
+    },
+    {
+        name: "Little Cake",
+        filling: "White Cake",
+        frosting:"Brazilian White Brigadeiro",
+        category:"dessert",
+        weight: "8 Oz",
+        imageUrl:
+            "img/dessert.webp"
     },
     {
         name: "Carrot Cake in a Jar",
