@@ -54,7 +54,7 @@
 
     /*----------- HEADER --------------*/
     .container-header {
-        grid-template-columns: repeat(100px, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         display: flex;
         max-height: 200px;
     }
@@ -62,7 +62,7 @@
     .container-header img {
         grid-column: 2/3;
         height: 300px;
-        margin-top: 1-px;
+        margin-top: -1px;
         } 
 
 
