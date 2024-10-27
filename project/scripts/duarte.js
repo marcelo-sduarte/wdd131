@@ -201,7 +201,6 @@ if (window.location.pathname.includes ("/project/duartedoceria.html")) {
    document.getElementById('visit').innerText = `${stringVisit}`;
 }
 
-
 if (window.location.pathname.includes('/project/cake-store.html')) {
      class_name = ".gallerycakes"
      category_name = "simple"
